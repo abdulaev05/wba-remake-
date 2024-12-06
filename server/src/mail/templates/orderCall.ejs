@@ -1,0 +1,55 @@
+<html lang="ru">
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+      }
+
+      .userData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        min-height: 120px;
+        background: #409fff;
+      }
+
+      .address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="userData">
+        <h1>Данные заказа</h1>
+
+        <p><%= username %>,</p>
+        <br />
+        <p><%= email %>,</p>
+        <br />
+        <p><%= phoneNumber %>,</p>
+        <br />
+        <div class="address">
+          <p><%= address.city %>,</p>
+          <br />
+          <p><%= address.street %>,</p>
+          <br />
+          <p><%= address.home %>,</p>
+          <br />
+        </div>
+      </table>
+    </div>
+  </body>
+</html>
